@@ -19,6 +19,7 @@ import java.util.Scanner;
 
 public class P2 {
 
+    //모든 경우를 탐색하여 7명 키의 합이 100이 되는 값을 리턴
     public static int func(ArrayList<Integer> harr, int nan1, int nan2) {
         int ret = 0;
         for(int i = 0; i < harr.size(); i++) {
@@ -40,6 +41,7 @@ public class P2 {
             harr.add(sc.nextInt());
         }
 
+        //7명 키의 합 100이 되는 경우를 찾고 나머지 2명은 제외시킨다.
         int nan1 = 0;
         int nan2 = 0;
 
@@ -55,7 +57,7 @@ public class P2 {
         harr.remove(nan1);
 
 
-
+        //오름차순으로 정렬해서 출력.
         Collections.sort(harr);
         for(int i = 0; i < harr.size(); i++) {
             System.out.println(harr.get(i));

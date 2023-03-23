@@ -15,7 +15,7 @@ package com.company.brute_force;
 
 import java.util.Scanner;
 
-public class p1 {
+public class P1 {
 
     //분해합을 계산하는 메서
     public static int func(int k){
