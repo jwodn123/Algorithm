@@ -17,7 +17,6 @@ public class P6 {
 
             for(int j = 0; j < str.length(); j++) {
                 int idx = str.charAt(j) - 97; //97->a
-                System.out.println(idx);
                 if(alphabet[idx]) { //이미 사용된 문자라
                     if(str.charAt(j) != str.charAt(j-1)) { //연속된 문자가 아니라면
                         tf = false;
